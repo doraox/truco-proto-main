@@ -1,6 +1,6 @@
 .cuerpoMain {
     background-color: #1a100a;
-    background-image: url(fondo-truco.svg);
+    background-image: url(img/fondo-truco.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -79,4 +79,22 @@
 .accordion-body {
   background-color: #2b1d14;
   color: #efe2c0;
+}
+
+.carta{
+  width: 100px;
+ 
+  height: auto;
+  
+}
+
+@media(min-width: 992px){
+  .carta{
+    width: 150px;
+  }
+}
+@media(min-width: 576px){
+  .carta{
+    width:140;
+  }
 }
