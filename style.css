@@ -70,11 +70,23 @@
   }
 }
 
-/* css de la pagina principal*/
-
-.cuerpoMain {
-    background-image: url(fondo-truco.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+/* --- Estilos para los palitos del truco --- */
+.palito line {
+  stroke: #4a3322; /* Color apagado por defecto */
+  transition: stroke 0.2s ease;
 }
+
+.palito circle {
+  fill: #4a3322; /* Color apagado por defecto */
+  transition: fill 0.2s ease;
+}
+
+/* Cuando se activan con JS */
+.palito.on line {
+  stroke: #efe2c0 !important; /* Color claro activo */
+}
+
+.palito.on circle {
+  fill: #c0392b !important; /* Rojo activo */
+}
+
